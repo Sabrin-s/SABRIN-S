@@ -253,6 +253,26 @@ function App() {
             </div>
           </div>
         </div>
+
+        {/* Embedded Resume Viewer */}
+        <div style={{ marginTop: '4rem' }}>
+          <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', textAlign: 'center' }}>Full Resume Document</h3>
+          <div style={{ 
+            background: '#000', 
+            padding: '1rem', 
+            borderRadius: '12px', 
+            border: '1px solid var(--border-color)',
+            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.5)'
+          }}>
+            <iframe 
+              src="/assets/resume.pdf" 
+              width="100%" 
+              height="800px" 
+              style={{ border: 'none', borderRadius: '8px', background: '#fff' }} 
+              title="Full Resume"
+            />
+          </div>
+        </div>
       </section>
 
       {/* Contact Section */}
