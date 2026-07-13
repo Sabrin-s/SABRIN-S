@@ -168,11 +168,16 @@ function App() {
               </div>
             </div>
             
-            {/* View Full Resume Button placed after experience */}
-            <div style={{ marginTop: '2rem', textAlign: 'center' }}>
-              <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.8rem 1.5rem', fontSize: '1rem' }}>
-                <FileText size={20} /> View Full Resume
-              </a>
+            <div className="resume-card glass-panel" style={{ marginTop: '2rem' }}>
+              <h3>Certifications</h3>
+              <ul className="cert-list">
+                <li>AI Certification — Infosys Springboard</li>
+                <li>SnowPro Associate Certification — Snowflake</li>
+                <li>Salesforce Developer Virtual Internship</li>
+                <li>ServiceNow Virtual Internship</li>
+                <li>UiPath Certified Automation Developer Associate</li>
+                <li>IBM AI & Cloud, Edunet Foundation</li>
+              </ul>
             </div>
           </div>
 
@@ -238,18 +243,6 @@ function App() {
                   <span className="tech-tag">GitHub Actions</span>
                 </div>
               </div>
-            </div>
-
-            <div className="resume-card glass-panel">
-              <h3>Certifications</h3>
-              <ul className="cert-list">
-                <li>AI Certification — Infosys Springboard</li>
-                <li>SnowPro Associate Certification — Snowflake</li>
-                <li>Salesforce Developer Virtual Internship</li>
-                <li>ServiceNow Virtual Internship</li>
-                <li>UiPath Certified Automation Developer Associate</li>
-                <li>IBM AI & Cloud, Edunet Foundation</li>
-              </ul>
             </div>
           </div>
         </div>
