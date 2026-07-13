@@ -128,11 +128,8 @@ function App() {
 
       {/* Resume Section */}
       <section id="resume" className="resume container">
-        <div className="section-header" style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'space-between', alignItems: 'center', marginBottom: '3rem' }}>
-          <h2 className="section-title" style={{ marginBottom: 0 }}>Resume & Experience</h2>
-          <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem' }}>
-            <FileText size={18} /> Download Full Resume
-          </a>
+        <div className="section-header" style={{ marginBottom: '3rem' }}>
+          <h2 className="section-title" style={{ marginBottom: 0, textAlign: 'left' }}>Resume & Experience</h2>
         </div>
 
         <div className="resume-layout">
@@ -148,8 +145,10 @@ function App() {
                 </div>
                 <p className="resume-meta" style={{ marginBottom: '1rem', color: '#fff', fontSize: '1rem' }}>Cybernaut Edu-Tech LLP (Remote)</p>
                 <ul style={{ paddingLeft: '1.5rem', lineHeight: '1.8' }}>
-                  <li style={{ marginBottom: '0.75rem' }}>Wrote modular backend applications in Python using OOP and REST API design patterns; handled file processing, data transformation, and error handling across multiple backend components.</li>
-                  <li>Collaborated using Git/GitHub for version control and participated in team code reviews; authored API documentation and internal workflow docs.</li>
+                  <li style={{ marginBottom: '0.75rem' }}>Wrote modular backend applications in Python using OOP and REST API design patterns.</li>
+                  <li style={{ marginBottom: '0.75rem' }}>Handled file processing, data transformation, and error handling across multiple backend components.</li>
+                  <li style={{ marginBottom: '0.75rem' }}>Collaborated using Git/GitHub for version control and participated in team code reviews.</li>
+                  <li>Authored API documentation and internal workflow docs.</li>
                 </ul>
               </div>
 
@@ -162,10 +161,18 @@ function App() {
                 </div>
                 <p className="resume-meta" style={{ marginBottom: '1rem', color: '#fff', fontSize: '1rem' }}>SmartBridge & SmartInternz</p>
                 <ul style={{ paddingLeft: '1.5rem', lineHeight: '1.8' }}>
-                  <li style={{ marginBottom: '0.75rem' }}>Completed an 8-week virtual internship covering Salesforce Fundamentals, Organizational Setup, and Process Automation via Trailhead. Earned Super Badges in Apex Specialist and Process Automation Specialist.</li>
+                  <li style={{ marginBottom: '0.75rem' }}>Completed an 8-week virtual internship covering Salesforce Fundamentals, Organizational Setup, and Process Automation via Trailhead.</li>
+                  <li style={{ marginBottom: '0.75rem' }}>Earned Super Badges in Apex Specialist and Process Automation Specialist.</li>
                   <li>Gained hands-on experience with Apex, unit testing/debugging, VS Code/CLI setup, and Lightning Web Components (LWC) & APIs.</li>
                 </ul>
               </div>
+            </div>
+            
+            {/* View Full Resume Button placed after experience */}
+            <div style={{ marginTop: '2rem', textAlign: 'center' }}>
+              <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.8rem 1.5rem', fontSize: '1rem' }}>
+                <FileText size={20} /> View Full Resume
+              </a>
             </div>
           </div>
 
@@ -182,16 +189,54 @@ function App() {
             
             <div className="resume-card glass-panel" style={{ marginBottom: '2rem' }}>
               <h3>Technical Skills</h3>
-              <div className="skills-tags">
-                <span className="tech-tag">Python</span>
-                <span className="tech-tag">Java</span>
-                <span className="tech-tag">Django</span>
-                <span className="tech-tag">Flask</span>
-                <span className="tech-tag">React</span>
-                <span className="tech-tag">Machine Learning</span>
-                <span className="tech-tag">Deep Learning (PyTorch, ResNet)</span>
-                <span className="tech-tag">MySQL</span>
-                <span className="tech-tag">REST APIs</span>
+              
+              <div style={{ marginBottom: '1.5rem' }}>
+                <strong style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Core</strong>
+                <div className="skills-tags">
+                  <span className="tech-tag">Python</span>
+                  <span className="tech-tag">Java</span>
+                  <span className="tech-tag">AI/ML</span>
+                  <span className="tech-tag">REST APIs</span>
+                  <span className="tech-tag">OOP</span>
+                  <span className="tech-tag">Data Structures</span>
+                  <span className="tech-tag">SQL</span>
+                  <span className="tech-tag">Backend</span>
+                </div>
+              </div>
+              
+              <div style={{ marginBottom: '1.5rem' }}>
+                <strong style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Frameworks & Frontend</strong>
+                <div className="skills-tags">
+                  <span className="tech-tag">Django</span>
+                  <span className="tech-tag">Flask</span>
+                  <span className="tech-tag">Streamlit</span>
+                  <span className="tech-tag">React</span>
+                  <span className="tech-tag">HTML/CSS</span>
+                  <span className="tech-tag">JavaScript</span>
+                </div>
+              </div>
+
+              <div style={{ marginBottom: '1.5rem' }}>
+                <strong style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>ML & AI</strong>
+                <div className="skills-tags">
+                  <span className="tech-tag">Scikit-learn</span>
+                  <span className="tech-tag">Pandas</span>
+                  <span className="tech-tag">NumPy</span>
+                  <span className="tech-tag">TensorFlow</span>
+                  <span className="tech-tag">PyTorch</span>
+                  <span className="tech-tag">XGBoost</span>
+                  <span className="tech-tag">ResNet-18</span>
+                </div>
+              </div>
+
+              <div style={{ marginBottom: '1.5rem' }}>
+                <strong style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Databases & DevOps</strong>
+                <div className="skills-tags">
+                  <span className="tech-tag">MySQL</span>
+                  <span className="tech-tag">MongoDB</span>
+                  <span className="tech-tag">Git/GitHub</span>
+                  <span className="tech-tag">GitHub Actions</span>
+                </div>
               </div>
             </div>
 
