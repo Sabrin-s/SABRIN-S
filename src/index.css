@@ -396,3 +396,60 @@ h1, h2, h3 {
     height: 250px;
   }
 }
+
+/* Resume Section */
+.resume {
+  padding: 6rem 0;
+}
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.resume-card {
+  padding: 2.5rem;
+}
+.resume-card h3 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+.resume-item {
+  margin-bottom: 1.5rem;
+}
+.resume-item h4 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+.resume-meta {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+.resume-item ul {
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+.resume-item li {
+  margin-bottom: 0.5rem;
+}
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.cert-list {
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+@media (max-width: 900px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

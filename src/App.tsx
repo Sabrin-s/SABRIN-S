@@ -72,6 +72,7 @@ function App() {
           <nav className="nav-links">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
           </nav>
         </div>
@@ -122,6 +123,64 @@ function App() {
               </a>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Resume Section */}
+      <section id="resume" className="resume container">
+        <h2 className="section-title">Resume & Skills</h2>
+        <div className="resume-grid">
+          <div className="resume-card glass-panel">
+            <h3>Experience</h3>
+            <div className="resume-item">
+              <h4>Python Developer Intern</h4>
+              <p className="resume-meta">Cybernaut Edu-Tech LLP | Feb 2025 – May 2025</p>
+              <ul>
+                <li>Wrote modular backend applications in Python using OOP and REST API design patterns.</li>
+                <li>Collaborated using Git/GitHub for version control and participated in team code reviews.</li>
+              </ul>
+            </div>
+            <div className="resume-item">
+              <h4>Salesforce Developer Virtual Intern</h4>
+              <p className="resume-meta">SmartBridge & SmartInternz | May 2024 – Jun 2024</p>
+              <ul>
+                <li>Completed 8-week virtual internship covering Salesforce Fundamentals and Process Automation.</li>
+                <li>Gained hands-on experience with Apex, LWC, and APIs.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="resume-card glass-panel">
+            <h3>Education</h3>
+            <div className="resume-item">
+              <h4>B.E., Computer Science and Engineering</h4>
+              <p className="resume-meta">Mahendra Engineering College | 2022 – 2026</p>
+              <p>CGPA: 9.1/10.0</p>
+            </div>
+            
+            <h3 style={{ marginTop: '2rem' }}>Technical Skills</h3>
+            <div className="skills-tags">
+              <span className="tech-tag">Python</span>
+              <span className="tech-tag">Java</span>
+              <span className="tech-tag">Django</span>
+              <span className="tech-tag">Flask</span>
+              <span className="tech-tag">React</span>
+              <span className="tech-tag">Machine Learning</span>
+              <span className="tech-tag">PyTorch</span>
+              <span className="tech-tag">MySQL</span>
+              <span className="tech-tag">REST APIs</span>
+            </div>
+
+            <h3 style={{ marginTop: '2rem' }}>Certifications</h3>
+            <ul className="cert-list">
+              <li>AI Certification — Infosys Springboard</li>
+              <li>SnowPro Associate Certification — Snowflake</li>
+              <li>Salesforce Developer Virtual Internship</li>
+              <li>ServiceNow Virtual Internship</li>
+              <li>UiPath Certified Automation Developer Associate</li>
+              <li>IBM AI & Cloud, Edunet Foundation</li>
+            </ul>
+          </div>
         </div>
       </section>
 
