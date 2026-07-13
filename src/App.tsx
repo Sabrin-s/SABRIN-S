@@ -128,58 +128,84 @@ function App() {
 
       {/* Resume Section */}
       <section id="resume" className="resume container">
-        <h2 className="section-title">Resume & Skills</h2>
-        <div className="resume-grid">
-          <div className="resume-card glass-panel">
-            <h3>Experience</h3>
-            <div className="resume-item">
-              <h4>Python Developer Intern</h4>
-              <p className="resume-meta">Cybernaut Edu-Tech LLP | Feb 2025 – May 2025</p>
-              <ul>
-                <li>Wrote modular backend applications in Python using OOP and REST API design patterns.</li>
-                <li>Collaborated using Git/GitHub for version control and participated in team code reviews.</li>
-              </ul>
-            </div>
-            <div className="resume-item">
-              <h4>Salesforce Developer Virtual Intern</h4>
-              <p className="resume-meta">SmartBridge & SmartInternz | May 2024 – Jun 2024</p>
-              <ul>
-                <li>Completed 8-week virtual internship covering Salesforce Fundamentals and Process Automation.</li>
-                <li>Gained hands-on experience with Apex, LWC, and APIs.</li>
-              </ul>
+        <div className="section-header" style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'space-between', alignItems: 'center', marginBottom: '3rem' }}>
+          <h2 className="section-title" style={{ marginBottom: 0 }}>Resume & Experience</h2>
+          <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem' }}>
+            <FileText size={18} /> Download Full Resume
+          </a>
+        </div>
+
+        <div className="resume-layout">
+          {/* Main Content Column (Experience) */}
+          <div className="resume-main">
+            <div className="resume-card glass-panel" style={{ marginBottom: '2rem' }}>
+              <h3 style={{ fontSize: '1.75rem', marginBottom: '2rem' }}>Work Experience</h3>
+              
+              <div className="resume-item">
+                <div className="resume-item-header" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '0.5rem' }}>
+                  <h4 style={{ fontSize: '1.2rem' }}>Python Developer Intern</h4>
+                  <span className="resume-meta" style={{ color: 'var(--accent-color)', fontWeight: 600 }}>Feb 2025 – May 2025</span>
+                </div>
+                <p className="resume-meta" style={{ marginBottom: '1rem', color: '#fff', fontSize: '1rem' }}>Cybernaut Edu-Tech LLP (Remote)</p>
+                <ul style={{ paddingLeft: '1.5rem', lineHeight: '1.8' }}>
+                  <li style={{ marginBottom: '0.75rem' }}>Wrote modular backend applications in Python using OOP and REST API design patterns; handled file processing, data transformation, and error handling across multiple backend components.</li>
+                  <li>Collaborated using Git/GitHub for version control and participated in team code reviews; authored API documentation and internal workflow docs.</li>
+                </ul>
+              </div>
+
+              <hr style={{ border: 0, borderTop: '1px solid var(--border-color)', margin: '2.5rem 0' }} />
+
+              <div className="resume-item">
+                <div className="resume-item-header" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '0.5rem' }}>
+                  <h4 style={{ fontSize: '1.2rem' }}>Salesforce Developer Virtual Intern</h4>
+                  <span className="resume-meta" style={{ color: 'var(--accent-color)', fontWeight: 600 }}>May 2024 – Jun 2024</span>
+                </div>
+                <p className="resume-meta" style={{ marginBottom: '1rem', color: '#fff', fontSize: '1rem' }}>SmartBridge & SmartInternz</p>
+                <ul style={{ paddingLeft: '1.5rem', lineHeight: '1.8' }}>
+                  <li style={{ marginBottom: '0.75rem' }}>Completed an 8-week virtual internship covering Salesforce Fundamentals, Organizational Setup, and Process Automation via Trailhead. Earned Super Badges in Apex Specialist and Process Automation Specialist.</li>
+                  <li>Gained hands-on experience with Apex, unit testing/debugging, VS Code/CLI setup, and Lightning Web Components (LWC) & APIs.</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div className="resume-card glass-panel">
-            <h3>Education</h3>
-            <div className="resume-item">
-              <h4>B.E., Computer Science and Engineering</h4>
-              <p className="resume-meta">Mahendra Engineering College | 2022 – 2026</p>
-              <p>CGPA: 9.1/10.0</p>
+          {/* Sidebar Column (Education, Skills, Certs) */}
+          <div className="resume-sidebar">
+            <div className="resume-card glass-panel" style={{ marginBottom: '2rem' }}>
+              <h3>Education</h3>
+              <div className="resume-item" style={{ marginBottom: 0 }}>
+                <h4>B.E., Computer Science and Engineering</h4>
+                <p className="resume-meta" style={{ margin: '0.5rem 0' }}>Mahendra Engineering College | 2022 – 2026</p>
+                <p style={{ color: 'var(--text-secondary)' }}>CGPA: 9.1/10.0</p>
+              </div>
             </div>
             
-            <h3 style={{ marginTop: '2rem' }}>Technical Skills</h3>
-            <div className="skills-tags">
-              <span className="tech-tag">Python</span>
-              <span className="tech-tag">Java</span>
-              <span className="tech-tag">Django</span>
-              <span className="tech-tag">Flask</span>
-              <span className="tech-tag">React</span>
-              <span className="tech-tag">Machine Learning</span>
-              <span className="tech-tag">PyTorch</span>
-              <span className="tech-tag">MySQL</span>
-              <span className="tech-tag">REST APIs</span>
+            <div className="resume-card glass-panel" style={{ marginBottom: '2rem' }}>
+              <h3>Technical Skills</h3>
+              <div className="skills-tags">
+                <span className="tech-tag">Python</span>
+                <span className="tech-tag">Java</span>
+                <span className="tech-tag">Django</span>
+                <span className="tech-tag">Flask</span>
+                <span className="tech-tag">React</span>
+                <span className="tech-tag">Machine Learning</span>
+                <span className="tech-tag">Deep Learning (PyTorch, ResNet)</span>
+                <span className="tech-tag">MySQL</span>
+                <span className="tech-tag">REST APIs</span>
+              </div>
             </div>
 
-            <h3 style={{ marginTop: '2rem' }}>Certifications</h3>
-            <ul className="cert-list">
-              <li>AI Certification — Infosys Springboard</li>
-              <li>SnowPro Associate Certification — Snowflake</li>
-              <li>Salesforce Developer Virtual Internship</li>
-              <li>ServiceNow Virtual Internship</li>
-              <li>UiPath Certified Automation Developer Associate</li>
-              <li>IBM AI & Cloud, Edunet Foundation</li>
-            </ul>
+            <div className="resume-card glass-panel">
+              <h3>Certifications</h3>
+              <ul className="cert-list">
+                <li>AI Certification — Infosys Springboard</li>
+                <li>SnowPro Associate Certification — Snowflake</li>
+                <li>Salesforce Developer Virtual Internship</li>
+                <li>ServiceNow Virtual Internship</li>
+                <li>UiPath Certified Automation Developer Associate</li>
+                <li>IBM AI & Cloud, Edunet Foundation</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
