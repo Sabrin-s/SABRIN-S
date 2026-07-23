@@ -3,6 +3,13 @@ import './index.css';
 
 const projects = [
   {
+    title: "Research Mind - Multi-Agent AI",
+    description: "Engineered backend orchestration logic coordinating 6 autonomous AI agents into a distributed pipeline. Integrated FastAPI endpoints with a React frontend for real-time markdown reports, and containerized the deployment using Docker and GCP.",
+    link: "https://github.com/Sabrin-s",
+    tech: ["React", "FastAPI", "Python", "Docker", "GCP", "Gradio"],
+    icon: <BrainCircuit size={24} />
+  },
+  {
     title: "AI-First CRM HCP Module",
     description: "AI-powered CRM for Healthcare Professionals. Uses LangGraph and Groq LLMs for natural language interaction logging, summarization, and smart follow-up suggestions.",
     link: "https://github.com/Sabrin-s/smart-crm-hcp",
